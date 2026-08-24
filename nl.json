@@ -1,0 +1,24 @@
+{
+  "title": "UniFi Protect Events",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Verbind met UniFi Protect",
+        "description": "Gebruik een lokale API-key van je UniFi-console.",
+        "data": {
+          "host": "IP-adres of hostnaam",
+          "api_key": "API-key",
+          "verify_ssl": "SSL-certificaat controleren"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken",
+      "invalid_auth": "Ongeldige API-key",
+      "unknown": "Onverwachte fout"
+    },
+    "abort": {
+      "already_configured": "Deze console is al geconfigureerd"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "UniFi Protect Events",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to UniFi Protect",
+        "description": "Use a local API key from your UniFi console.",
+        "data": {
+          "host": "IP address or hostname",
+          "api_key": "API key",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect",
+      "invalid_auth": "Invalid API key",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This console is already configured"
+    }
+  }
+}
