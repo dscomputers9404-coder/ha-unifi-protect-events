@@ -7,5 +7,10 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: home-assistant/actions/hassfest@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Hassfest
+        uses: home-assistant/actions/hassfest@master
