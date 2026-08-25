@@ -1,14 +1,16 @@
-{
-  "domain": "unifi_protect_events",
-  "name": "UniFi Protect Events",
-  "codeowners": [
-    "@dscomputers9404-coder"
-  ],
-  "config_flow": true,
-  "documentation": "https://github.com/dscomputers9404-coder/ha-unifi-protect-events",
-  "integration_type": "hub",
-  "iot_class": "local_push",
-  "issue_tracker": "https://github.com/dscomputers9404-coder/ha-unifi-protect-events/issues",
-  "requirements": [],
-  "version": "0.2.5"
-}
+name: Hassfest
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Hassfest
+        uses: home-assistant/actions/hassfest@master
