@@ -1,8 +1,5 @@
 {
   "name": "UniFi Protect Events",
   "render_readme": true,
-  "domains": [
-    "unifi_protect_events"
-  ],
   "homeassistant": "2026.7.0"
 }
